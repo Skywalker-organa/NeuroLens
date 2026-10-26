@@ -1,0 +1,9 @@
+data/
+*.img
+*.hdr
+*.nii
+*.nii.gz
+*.npy
+*.tar.gz
+checkpoints/
+.ipynb_checkpoints/
