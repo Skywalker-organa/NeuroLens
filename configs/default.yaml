@@ -1,0 +1,27 @@
+paths:
+  raw_dir: "/content/data/disc1"
+  metadata_path: "/content/data/oasis_cross-sectional-5708aa0a98d82080.xlsx"
+  processed_dir: "/content/data/processed_mri"
+  split_json: "/content/data/splits.json"
+  checkpoints_dir: "/content/drive/MyDrive/NeuroLens/checkpoints"
+
+preprocessing:
+  target_resolution: 96
+  background_threshold: 0.0
+
+model:
+  image_size: [96, 96, 96]
+  swin_depths: [2, 2, 6, 2]
+  swin_feature_size: 48
+  swin_num_heads: [3, 6, 12, 24]
+  swin_window_size: [7, 7, 7]
+  dropout: 0.3
+  second_branch_type: "convnext3d"
+
+training:
+  seed: 42
+  epochs: 30
+  batch_size: 4
+  lr: 0.0001
+  weight_decay: 0.01
+  early_stopping_patience: 10
