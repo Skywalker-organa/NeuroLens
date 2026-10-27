@@ -1,9 +1,7 @@
+__pycache__/
+*.pyc
+*.pt
+*.pth
 data/
-*.img
-*.hdr
-*.nii
-*.nii.gz
-*.npy
 *.tar.gz
-checkpoints/
-.ipynb_checkpoints/
+runs/
