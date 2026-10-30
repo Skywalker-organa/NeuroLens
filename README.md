@@ -9,7 +9,7 @@ Our system classifies subjects into three clinical cohorts based on the Clinical
 
 ---
 
-## 🛠️ Complete Project Directory Structure
+## Complete Project Directory Structure
 
 ```directory
 NeuroLens/
@@ -32,7 +32,7 @@ NeuroLens/
 
 ---
 
-## 🚀 Multimodal Pipeline & Data Flow Architecture
+## Multimodal Pipeline & Data Flow Architecture
 
 Our end-to-end framework implements a highly robust pipeline from raw, unevenly-distributed neuroimaging scans to final localized spatial and tabular explanations.
 
@@ -65,7 +65,7 @@ Applied dynamically to the training loader to counter small-sample overfitting:
 
 ---
 
-## 🧠 Advanced Hybrid Model Architecture
+## Advanced Hybrid Model Architecture
 
 NeuroLens supports a variety of modular backbones that merge independent feature extractors before projecting to the final classification heads:
 
@@ -77,7 +77,7 @@ NeuroLens supports a variety of modular backbones that merge independent feature
 
 ---
 
-## 📊 Empirical Benchmarks & Ablation Performance
+## Empirical Benchmarks & Ablation Performance
 
 Validation is conducted using a rigorous subject-level Stratified 3-Fold Cross-Validation strategy to guarantee that scans from the same subject never overlap between partitions.
 
@@ -96,7 +96,7 @@ Validation is conducted using a rigorous subject-level Stratified 3-Fold Cross-V
 
 ---
 
-## 🔍 Explainable AI (XAI) & Interpretability
+## Explainable AI (XAI) & Interpretability
 
 Rather than presenting a "black-box" classification, NeuroLens provides two deep interpretability layers to validate clinical decisions:
 
@@ -114,7 +114,7 @@ By tracking class-specific gradients back to the final layers of our 3D convolut
 
 ---
 
-## 🖼️ Diagnostic and Interpretability Visualizations
+## Diagnostic and Interpretability Visualizations
 
 Below are key diagnostic, preprocessing, and model explainability visualizations generated during our empirical pipeline runs.
 
@@ -156,7 +156,7 @@ Visualizes local attribute forces pushing individual subject predictions towards
 
 ---
 
-## 🛠️ Step-by-Step Execution Guide
+## Step-by-Step Execution Guide
 
 ### 1. Installation
 Ensure you have CUDA-supported PyTorch installed, then install package prerequisites:
