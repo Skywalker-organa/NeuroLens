@@ -112,6 +112,48 @@ By tracking class-specific gradients back to the final layers of our 3D convolut
 
 ---
 
+## 🖼️ Diagnostic and Interpretability Visualizations
+
+Below are key diagnostic, preprocessing, and model explainability visualizations generated during our empirical pipeline runs.
+
+### 1. Labelled Subject Cohort Distribution
+Shows the structural balance across Cognitively Normal (CN), Very Mild Dementia (CDR 0.5), and Alzheimer's Disease (AD) classes within the pipeline-verification subset.
+
+<p align="center">
+  <img src="/content/Screenshot 2026-10-30 141612.png" width="650" alt="Cohort Class Distribution">
+</p>
+
+### 2. Isotropic Volumetric MRI Preprocessing Views
+Illustrates central slices across the Sagittal, Coronal, and Axial planes after voxel resampling and $Z$-score tissue intensity normalization.
+
+<p align="center">
+  <img src="/content/Screenshot 2026-10-30 141634.png" width="850" alt="Processed T1 MRI Slices">
+</p>
+
+### 3. Unified Clinical Feature Distribution After Normalization
+Distributions of all ten clinical markers after dynamic training-set median imputation and standardization (ensuring Mean $\approx 0$ and Std $\approx 1$).
+
+<p align="center">
+  <img src="/content/Screenshot 2026-10-30 141704.png" width="850" alt="Clinical Feature Normalizations">
+</p>
+
+### 4. Permutation Feature Importance Analysis
+Quantifies predictive feature degradation (decrease in out-of-fold Macro-F1 score) when clinical attributes are independently permuted.
+
+<p align="center">
+  <img src="/content/Screenshot 2026-10-30 141744.png" width="650" alt="Permutation Importance">
+</p>
+
+### 5. Multi-Class Game-Theoretic SHAP Attributions
+Visualizes local attribute forces pushing individual subject predictions towards CN (Cognitively Normal) or Very Mild Dementia statuses.
+
+<p align="center">
+  <img src="/content/Screenshot 2026-10-30 141749.png" width="550" alt="CN SHAP Beeswarm">
+  <img src="/content/Screenshot 2026-10-30 141753.png" width="550" alt="Very Mild SHAP Beeswarm">
+</p>
+
+---
+
 ## 🛠️ Step-by-Step Execution Guide
 
 ### 1. Installation
